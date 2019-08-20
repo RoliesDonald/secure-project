@@ -9,8 +9,6 @@
   <!-- base:css -->
   <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="../../vendors/base/vendor.bundle.base.css">
-  <!-- Bootstrap -->
-  <!-- <link href="../../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
   <!-- endinject -->
   <!-- plugin css for this page -->
   <!-- Font Awesome -->
@@ -23,9 +21,7 @@
   <link href="../../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.css" rel="stylesheet">
   <!-- End plugin css for this page -->
   <!-- inject:css -->
-  <link href="../../css/custom.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../../css/style.css">
-  
   <!-- endinject -->
   <link rel="shortcut icon" href="../../images/favicon.png" />
 </head>
@@ -231,7 +227,7 @@
                   <div class="submenu">
                       <ul>
                           <li class="nav-item"><a class="nav-link" href="../../pages/operation/attendance.html">Attendances</a></li>
-                          <li class="nav-item"><a class="nav-link" href="../../pages/ui-features/typography.html">Attendances Scheduling</a></li>
+                          <li class="nav-item"><a class="nav-link" href="../../pages/operation/attendance-scheduling.html">Attendances Scheduling</a></li>
                           <li class="nav-item"><a class="nav-link" href="../../pages/ui-features/typography.html">Patrol Tours</a></li>
                           <li class="nav-item"><a class="nav-link" href="../../pages/ui-features/typography.html">Task</a></li>
                           <li class="nav-item"><a class="nav-link" href="../../pages/ui-features/typography.html">Massage Broadcast</a></li>
@@ -1652,11 +1648,17 @@
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
-  <script>
-    $('#datatable-responsive').DataTable();
-  </script>
-  <!-- jQuery -->
+
   <script src="../../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  
+  <script>
+      $(document).ready(function() {
+            $('#datatable-responsive').DataTable();
+            } );
+    </script>
+  
   <!-- base:js -->
   <script src="../../vendors/base/vendor.bundle.base.js"></script>
   <!-- endinject -->
